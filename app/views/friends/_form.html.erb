@@ -11,32 +11,37 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class="mt-5 mb-3 input-group">
+    <%# <%= form.label :first_name, style: "display: block", class: "form-label" %>
+    <span class="input-group-text">First Name</span>
+    <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+  </div>
+
+  <div class="mb-3 input-group">
+    <%# <%= form.label :last_name, style: "display: block", class: "form-label" %>
+    <span class="input-group-text">Last Name</span>
+    <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
+  </div class="mb-3">
+
+  <div class="mb-3 input-group">
+    <%# <%= form.label :email, style: "display: block", class: "form-label" %>
+    <span class="input-group-text">Email</span>
+    <%= form.text_field :email, class: "form-control", placeholder: "Email" %>
+  </div>
+
+  <div class="mb-3 input-group">
+    <%# <%= form.label :phone, style: "display: block", class: "form-label" %>
+    <span class="input-group-text">Phone number</span>
+    <%= form.text_field :phone, class: "form-control", placeholder: "Phone number" %>
+  </div>
+
+  <div class="mb-3 input-group">
+    <%# <%= form.label :twitter, style: "display: block", class: "form-label" %>
+    <span class="input-group-text">Twitter</span>
+    <%= form.text_field :twitter, class: "form-control", placeholder: "Twitter" %>
   </div>
 
   <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
-  </div>
-
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-secondary mt-5" %>
   </div>
 <% end %>
