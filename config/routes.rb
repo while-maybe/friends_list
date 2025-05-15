@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :friends
   # get "home/index"
-  root "home#index"
+
+  # root "home#index"
+  root "friends#index"
 
   # new route for the about page
   get "home/about"
